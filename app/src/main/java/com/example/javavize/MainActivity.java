@@ -16,30 +16,23 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonConvertor = findViewById(R.id.buttonConvertor);
         Button buttonRandom = findViewById(R.id.buttonRandom);
-        Button buttonSms = findViewById(R.id.buttonSms);
 
         buttonConvertor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this , ConvertorView.class);
+                Intent intent = new Intent(MainActivity.this , Teacher.class);
                 startActivity(intent);
             }
         });
         buttonRandom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this , RandomView.class);
+                Intent intent = new Intent(MainActivity.this , Student.class);
                 startActivity(intent);
             }
         });
 
-        buttonSms.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this , SmsView.class);
-                startActivity(intent);
-            }
-        });
+
 
 
 
